@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Shop Kits — Elite Kicks</title>
+  <meta name="description" content="Browse 80+ home and away football kits from the Premier League, La Liga, Serie A, NPFL, national teams and more.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body data-page="shop">
+<main id="main">
+  <section class="hero hero--short">
+    <div class="hero-media" id="hero-media"></div>
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">The collection</span>
+        <h1>Every club. <span class="accent">One shop.</span></h1>
+        <p>Filter by league, compare home and away, and add printing on the kit page.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="toolbar" role="search">
+      <label class="visually-hidden" for="q">Search clubs or countries</label>
+      <input class="input" id="q" type="search" placeholder="Search clubs or countries…" autocomplete="off">
+      <label class="visually-hidden" for="type">Kit type</label>
+      <select class="input" id="type"><option value="">Home &amp; away</option><option value="home">Home kits</option><option value="away">Away kits</option></select>
+      <label class="visually-hidden" for="sort">Sort</label>
+      <select class="input" id="sort"><option value="popular">Most popular</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Club A–Z</option></select>
+      <div class="chips" id="chips" aria-label="Filter by league"></div>
+    </div>
+    <p class="result-count" id="count" aria-live="polite"></p>
+    <div class="kit-grid" id="grid"></div>
+  </section>
+</main>
+<script type="module" src="/js/pages/shop.js"></script>
+</body>
+</html>

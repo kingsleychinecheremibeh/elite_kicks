@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Bookings Admin — Elite Kicks</title>
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body data-page="admin">
+<main id="main" class="container" style="padding-top:110px;min-height:70vh">
+  <div class="section-head"><div><span class="eyebrow">Admin</span><h2>Bookings</h2></div>
+    <form id="login" style="display:flex;gap:10px;flex-wrap:wrap">
+      <label class="visually-hidden" for="token">Admin token</label>
+      <input class="input" id="token" type="password" placeholder="Admin token" autocomplete="current-password" style="width:240px">
+      <button class="btn btn-primary">Load</button>
+    </form>
+  </div>
+  <p class="muted" id="msg">Enter the ADMIN_TOKEN from your .env file.</p>
+  <div class="table-wrap" id="wrap" hidden><table><thead><tr><th>Ref</th><th>Customer</th><th>Items</th><th>Slot</th><th>Total</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div>
+</main>
+<script type="module" src="/js/pages/admin.js"></script>
+</body>
+</html>

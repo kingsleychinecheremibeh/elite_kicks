@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Kit — Elite Kicks</title>
+  <meta name="description" content="Spin the kit in 3D, choose your size and add custom name and number printing.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body data-page="shop">
+<main id="main" class="container">
+  <div class="kit-detail">
+    <div class="viewer" id="viewer">
+      <div class="viewer-toggle">
+        <button class="chip" id="show-front" aria-pressed="true">Front</button>
+        <button class="chip" id="show-back" aria-pressed="false">Back</button>
+      </div>
+      <span class="viewer-hint">Drag to rotate</span>
+    </div>
+    <div id="info"><p class="muted">Loading kit…</p></div>
+  </div>
+  <section class="section" style="padding-bottom:40px">
+    <div class="section-head"><div><span class="eyebrow">You might also like</span><h2 id="more-title">More kits</h2></div></div>
+    <div class="kit-grid" id="related"></div>
+  </section>
+</main>
+<script type="module" src="/js/pages/kit.js"></script>
+</body>
+</html>
